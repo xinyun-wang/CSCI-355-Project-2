@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+    font-family: 'Ubuntu',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg {
+    background: url('https://th.bing.com/th/id/R.df7f2bf8c8f311c15f4a2f269370a622?rik=oDq0%2blYbLvlEmg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f9%2f1%2f9%2f482557.jpg&ehk=HvnxzzOz38Zv1vreMUXPbwbboZ8FMxlCz5%2fW%2bFX4xcI%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc (100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px)
+}
+.loading-text {
+    font-size:50px;
+    color:white
+}
 #search-form {
     position:absolute;
     top: 0;
