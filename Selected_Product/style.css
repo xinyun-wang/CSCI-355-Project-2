@@ -1,0 +1,84 @@
+#search-form {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+#search-form input {
+    width: 150px; 
+}
+#search-form {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+#search-form button {
+    background-color: #e66f00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#main-navigation {
+    position: left;
+}
+
+#main-navigation li {
+    display: inline;
+    margin: 10px; /* Creates space between shop/subscrition/bundle */
+}
+
+#main-navigation a {
+    text-decoration: none; /* Remove underline for home/shop/cart */
+    color: #333; /* Adjust the link color as needed */
+}
+
+#account-login {
+    text-align: right; /* Align the text to the right */    
+}
+
+#account-login li{
+    display: inline;
+    margin: 10px;
+}
+
+img {
+    max-width: 325px;
+    
+}
+
+
+#logo-id{
+    max-block-size: 3cm;
+}
+
+.dark-roast-image{
+    float: left;
+    margin: 20px;
+}
+
+.text-box {
+ padding-top: 1cm;
+}
+
+.price-item{
+    margin-left: 4cm;
+}
+
+.box {
+    float: left;
+    width: 10%;
+    height: 10%;
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .box img {
+    width: 25%;
+    height: 25%;
+  }
+
+  h3 {
+    margin-top: 20px
+  }
