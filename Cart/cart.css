@@ -1,0 +1,170 @@
+/* Navigation */
+.container-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: inherit;
+  align-items: center;
+}
+
+.navigation {
+  display: block;
+}
+
+.top_navbar {
+  display: inline-flex;
+  margin-bottom: 90px;
+  margin-right: 70px;
+  float: right;
+}
+
+.navbar-nav li a {
+  color: #0c2237;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.bottom_navbar {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+form {
+  margin-left: 100px;
+}
+
+.cart {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.logo {
+  border: 3px solid black;
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.progressBar {
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+
+.progressLine {
+  background-color: #88DB73;
+  border-radius: 30px;
+  height: 18px;
+  width: 0%;
+}
+
+.body_container h6 { margin-bottom: 50px; }
+
+.title {
+  width: 100%;
+  background-color: #393535;
+  height: 135px;
+}
+
+.title h1 {
+  display: relative;
+  height: 90%; 
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  color: #E6E6E6;
+}
+
+.body_container {
+  width: 100%;
+  margin-top: 20px;
+  min-width: 1000px;
+}
+
+/* Items */
+.list-group-item {
+  margin-bottom: 20px;
+  border: 0 !important;
+  min-width: 500px;
+}
+
+.item {
+  display: flex;
+  height: 250px;
+  border: 1px solid black;
+}
+
+.list-group-item img {
+  position: relative;
+  margin-right: 20px;
+  width: 200px;
+  height: 246px;
+  background-color: #F1F1F1;
+}
+
+.item_info {
+  position: relative;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.quantityBtn {
+  position: relative;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.price {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+
+}
+
+/* Order Summary */
+.order-summary {
+  height: 500px;
+  background-color: #F1F1F1;
+  font-family: 'Jacques Francois';
+}
+
+.order-summary h3 {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.order-summary p {
+  font-size: 1.5em;
+}
+
+.label {
+  display: flex;
+  margin: 20px 30px;
+  justify-content: space-between;
+}
+
+.total {
+  margin-top: 75px;
+}
+
+#checkout {
+  color: white;
+  background-color: #393535;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  width: 75%;
+  height: 75px;
+}
