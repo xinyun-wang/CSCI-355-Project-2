@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/qc-logo.JPG" />
+    <link href="products.css" rel="stylesheet">
+    <script src="products.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Coffee - QCR</title>
+</head>
+<body>
+    <ul class="top">
+        <li><strong>Free Shipping for QC Students<i class="fa-solid fa-truck-fast" style="color: #e71939;"></i></strong></li>
+        <li><a id="loc" href='#'><strong><i class="fa-solid fa-map-location-dot" style="color: #e71939;"></i>Location</strong></a></li>
+        <li><a href='#'><strong><i class="fa-solid fa-car" style="color: #e71939;"></i>Order Pickup</strong></a></li>
+        <li><a href='#'><strong><i class="fa-solid fa-user" style="color: #e71939;"></i>Sign in</a></strong></li>
+    </ul>
+    <header>
+        <a href='../Home/home.html'><img id='logo' src="images/logoRevised.png" alt="logo"></a>
+        <nav>
+            <ul class="head">
+                <li id="drop" onmouseover="changeColor()" onclick="dropdown()"><a href='#' class="dropbtn"><strong id="shop">Shop<i id="down" class="fa-solid fa-caret-down" style="color: black;"></i></strong></a></li>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Coffee</a>
+                    <a href="#">Tea</a>
+                    <a href="#">Equipment</a>
+                    <a href="#">Gifts</a>
+                </div>
+                <li><a href='#'><strong>Subscriptions</a></strong></li>
+                <li><a href='#'><strong>Bundles</a></strong></li>
+            </ul>
+        </nav>
+        <a onmouseover="changeColorCart()"href='../Cart/cart.html'><strong><i id='cart' class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></strong>
+    </header>
+    <section>
+        <h1><strong>Coffee</strong></h1>
+    </section>
+    <div class="search">
+        <input type="text" placeholder="SEARCH" class="input" name="form">
+        <button class="btn">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+        </button>    
+    </div>
+    <div class="container">
+        <div class="item item-1"><i class="fa-solid fa-earth-asia"></i><p>Asia</p></div>
+        <div class="item item-2"><i class="fa-solid fa-earth-africa"></i><p>Africa</p></div>
+        <div class="item item-3"><i class="fa-solid fa-earth-americas"></i><p>South America</p></div>
+        <div class="item item-4"><i class="fa-solid fa-earth-oceania"></i><p>Australia</p></div>
+        <div class="item item-5"><i class="fa-solid fa-earth-europe"></i><p>Europe</p></div>
+    </div>
+    <div id="side">
+        <ul class="side">
+            <li onclick="dropdown2()" id="title"><strong><i class="fa-solid fa-mug-hot" style="color: #fff;"></i>Types of Coffee<i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></strong></li><span class="br"></span>
+            <div id="myDropdown2" class="dropdown-content2">
+                <li><span class="underline-anim"><a href='#'>Flavored Coffees</a></span></li>
+                <li><span class="underline-anim"><a href='#'>Decaf Coffees</a></span></li>
+                <li><span class="underline-anim"><a href='#'>K-Cups</a></span></li>
+                <li><span class="underline-anim"><a href='#'>Packets</a></span></li>
+            </div>
+        </ul>
+    </div>
+    <div class="products">
+        <div class="prod prod-1"><img src='https://schuilcoffee.com/cdn/shop/products/White-Heather_39ee22bf-f43c-4451-9f09-c5543e40bb67.png?v=1603490106&width=535' alt="coffee1"><p class="prod-name">Michigan Maple</p><p class="price">From $11.99 USD</p></div>
+        <div class="prod prod-2"><img src='https://schuilcoffee.com/cdn/shop/products/Almond-Joyful.png?v=1603487847&width=535' alt="coffee2"><p class="prod-name">Name 1</p><p class="price">From $11.99 USD</p></div>
+        <div class="prod prod-3"><p class="prod-name">Name 1</p><p class="price">From $11.99 USD</p></div>
+        <div class="prod prod-4"><p class="prod-name">Name 1</p><p class="price">From $11.99 USD</p></div>
+        <div class="prod prod-5"><p class="prod-name">Name 1</p><p class="price">From $11.99 USD</p></div>
+        <div class="prod prod-6"><p class="prod-name">Name 1</p><p class="price">From $11.99 USD</p></div>
+    </div>
+</body>
+</html>
