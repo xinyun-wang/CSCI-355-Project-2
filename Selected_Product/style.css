@@ -34,6 +34,7 @@ header {
     border: solid 1px rgba(0,0,0,0.15);
 }
 
+/* Image and logo settings */
 img {
     position:absolute;
     left: 40px;
