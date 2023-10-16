@@ -24,7 +24,7 @@ body{
     scale: 90%;
     top: 0vb;
     left: 42.5vb;
-    
+    color: #dd2424;
 }
 .top a{
     position: relative;
@@ -34,7 +34,7 @@ body{
     padding: 3px 14px;
     top: 0.5vb;
     left: 128vb;
-    color: #444444;
+    color: #dd2424;
 }
 .top a:hover{
     background-color: #d6d6d6;
@@ -60,18 +60,21 @@ body{
     left: 39vb;
     top: 6vb;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding:20px; 
-    color: #000000;
+    color: #dd2424;
 }
 .menu.active a{
-    color: #dedede;
+    color: #ffffff;
+}
+.menu.active a:hover{
+    color: rgb(255, 201, 138);
 }
 .menushop a:hover{
-    color: rgb(209, 129, 37);
+    color:#d18233;
 }
 .menu.active {
-    background-color: #38312d; 
+    background-color: #dd2424; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
 
@@ -93,7 +96,16 @@ body{
     position: fixed;
     transform: translateX(-170%) translateY(20%);
     scale: 80%;
-    color: #777;
+    color: #dd2424; 
+}
+.menu.active #search{
+    color: #000000; 
+    border: 1.5px solid #f4f4f4; 
+}
+#search{
+    color: #dd2424; 
+    border: 1.5px solid #dd2424; 
+    border-radius: 3px;
 }
 #search-icon:hover {
     scale: 85%; 
@@ -102,7 +114,7 @@ body{
     position: fixed;
     top: 8.5vh;
     right: 11.4vw;
-    color: #424242;
+    color: #dd2424; 
 }
 
 #shopping-cart:hover{
@@ -145,12 +157,12 @@ a{
     width: 13vw;
     top:13vh;
     left: 21vw;
-    background-color: #e3dcda;
+    background-color: #ffffff;
     border-radius: 2px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 .dropdownmenu a{
-    color: #38312d;
+    color:#d18233;
     font-size: 10px;
     padding:10px;
     line-height: 35px;
@@ -158,26 +170,40 @@ a{
 .dropdownmenu div:hover{
     border: 1px solid;
     border-radius: 2px;
-    border-color: #685649;
+    border-color: #f8bc5b;
+    background-color: #dd2424; 
+    scale: 103%;
 }
-
+.dropdownmenu a:hover{
+    color: #fff;
+}
 .banner{
     position: absolute;
-    height: 98.4vh;
+    display: flex;
+    height: 90vh;
+    width: 100%;
     top: 10vh;
     left: -13vh;
-    height: auto;
     background-color: #ff9054;
     padding-left: 100px;
     padding-right: 100px;
     z-index: -10;
+}
+.banner img{
+    height: 90vh;
+    width: 90%;
+    position: absolute;
+    left: 12vw;
+}
+.hometext{
+    display: grid;
 }
 .hometext h1{
     font-family: 'Playfair Display';
     font-weight: 100;
     font-size: 60px;
     position: relative;
-    left: 10vw;
+    left: 15%;
     top: 28vh;
     width: fit-content;
     color: #fff;
@@ -189,7 +215,7 @@ a{
     width: 450px;
     letter-spacing:.05vh;
     top: 24vh;
-    left: 10vw;
+    left: 15%;
     font-size: 13px;
     color: #fff;
 }
@@ -214,8 +240,8 @@ a{
 }
 .shop{
     position: relative;
-    top: 10vh;
-    
+    top: 40vh;
+    left: 5%;
 }
 .shop a{
     font-family: "Roboto";
@@ -223,7 +249,7 @@ a{
 }
 .text{
     position: relative;
-    top: 100vh;
+    top: 50vh;
 }
 .text h1{
     font-family: "Cormorant Garamond";
@@ -231,14 +257,14 @@ a{
     position: relative;
     font-size: 40px;
     left: 40vw;
-    top: -17vh;
+    top: 15vh;
 }
 .text h3{
     position: relative;
     font-size: 8px;
     left: 45vw;
-    top: -14vh;
-    color: #b56c98;
+    top: 18vh;
+    color: #dd2424;
 }
 
 .SpecialtyCoffees{
@@ -249,7 +275,7 @@ a{
     position: relative;
     width: 100%;
     height: 100%;
-    top: 95vh;
+    top: 73vh;
     align-items: center;
     left: 10.5vw;
 }
@@ -270,18 +296,27 @@ a{
 #ALL{
     font-family: "Roboto";
     position: relative;
-    background-color: #38312d; 
-    color: #fdf7ec;
+    background-color:#dd2424;
+    color: #fffefd;
     font-size: 8px;
     font-weight: 500;
     padding: 14px 20px;
     border-radius: 3px;
-    top: 105vh;
+    top: 83vh;
     left: 45vw;
 }
 
 #blank{
     position: relative;
     display: flex;
-    top: 103vh;
+    top: 89vh;
+}
+footer{
+    font-size: 8px;
+    font-family: "Roboto";
+    color: #df7d7d;
+}
+.SpecialtyCoffeesContiner{
+    position: relative;
+    z-index: -1;
 }
