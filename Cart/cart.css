@@ -1,36 +1,173 @@
-/* Navigation */
-.container-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: inherit;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic|Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&#038;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,hebrew,vietnamese&#038;display=swap');
+
+:root {
+  --qc-red: #E71939;
 }
 
-.navigation {
-  display: block;
+
+/* Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
 }
 
-.top_navbar {
-  display: inline-flex;
-  margin-bottom: 90px;
-  margin-right: 70px;
-  float: right;
+body {
+  overflow-x: hidden;
 }
 
-.navbar-nav li a {
-  color: #0c2237;
-  margin-left: 30px;
+li a {
+  color: black;
   text-decoration: none;
 }
 
-.bottom_navbar {
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin-top: 100px;
+header {
+  display: flex;
+  height: 90px;
+  width: 100%;
+  margin-top: 2.15%;
+  align-items: center;
+  position: absolute;
+  top: 2%;
+  left: 0px;
+  padding: 30px 10%;
+  background-color: white;
+  border: solid 1px rgba(0,0,0,0.15);
 }
 
-.nav-item {
-  margin-left: 30px;
+#logoimg {
+  position:absolute;
+  left: 40px;
+  cursor: pointer;
+  border: 1px solid var(--qc-red);
+  border-radius: 0 0 20px 20px;
+  height: 160px;
+  width: 400px;
+  margin-top: -110px;
+}
+
+.top {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 1280px;
+  margin-left: 28%;
+  padding-top: 18.5px;
+}
+
+.top li {
+  color: var(--qc-red);
+  position: relative;
+  right: 59px
+}
+
+.top li a {
+  transition: all 0.3s ease;
+}
+
+.top li a:hover {
+  color: var(--qc-red);
+  font-size: 20px;
+  font-size-adjust: 20px;
+}
+
+i {
+  padding-right: 10px;
+}
+
+.fa-solid.fa-truck-fast {
+  padding-left: 10px;
+}
+
+.head {
+  list-style: none;
+}
+
+.head li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 1.3em;
+}
+
+.head li a {
+  padding-left: 20px;
+  transition: all 0.3s ease;
+  margin-left: 250px;
+}
+
+.head li a:hover {
+  color: var(--qc-red);
+  font-size: 25px;
+  font-size-adjust: 20px;
+}
+
+.fa-solid.fa-caret-down {
+  padding-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.fa-solid.fa-caret-down:hover {
+  color: var(--qc-red);
+  font-size: 25px;
+  font-size-adjust: 20px;
+}
+
+#cart {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -13px;
+  margin-left: 290px;
+  font-size: 1.7em;
+  transition: all 0.3s ease;
+}
+
+#cart:hover {
+  font-size: 35px;
+  font-size-adjust: 20px;
+}
+
+
+#myDropdown {
+  overflow: hidden;
+  position: absolute;
+}
+
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: 290px;
+  margin-top: 10px;
+  z-index: 3;
+}
+  
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all .2s ease-in-out; 
+}
+  
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: white;
+  background-color: var(--qc-red);
+  transform: scale(1.1);
+}
+  
+.show {
+  display: block;
 }
 
 form {
@@ -68,19 +205,29 @@ body {
 
 .body_container h6 { margin-bottom: 50px; }
 
-.title {
+section {
+  display: flex;
+  position: relative;
   width: 100%;
-  background-color: #393535;
-  height: 135px;
+  padding-top: 170px;
+  padding-left: 200px;
+  background-color: black;
+  z-index: -1;
+  height: 50px;
+  margin-top: 60px;
+  background-image: url(../Products/images/coffee_bg_revised.png);
+  opacity: 0.8;
 }
 
-.title h1 {
-  display: relative;
-  height: 90%; 
-  display: flex;
-  align-items: center;
-  margin-left: 35px;
-  color: #E6E6E6;
+
+section h1 {
+  color: white;
+  font-style: italic;
+  font-size: 3.5em;
+  position: relative;
+  top: -97px;
+  padding-left: 120px; 
+  z-index: 3;
 }
 
 .body_container {
@@ -130,6 +277,10 @@ body {
   justify-content: space-between;
   width: 240px;
 
+}
+
+.subtract, .add {
+  width: 28px;
 }
 
 /* Order Summary */

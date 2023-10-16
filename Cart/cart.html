@@ -14,52 +14,33 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand">
-    <div class="container-nav">
-      <div class="navbar-header">
-        <a class="navbar-brand ms-5" href="../Home/home.html">
-          <img src="logo.png" alt="logo" class="logo align-text-top">
-        </a>
-      </div>
+  <ul class="top">
+    <li><strong>Free Shipping for QC Students<i class="fa-solid fa-truck-fast" style="color: #e71939;"></i></strong></li>
+    <li><a id="loc" href='#'><strong><i class="fa-solid fa-map-location-dot" style="color: #e71939;"></i>Location</strong></a></li>
+    <li><a href='#'><strong><i class="fa-solid fa-car" style="color: #e71939;"></i>Order Pickup</strong></a></li>
+    <li><a href='#'><strong><i class="fa-solid fa-user" style="color: #e71939;"></i>Sign in</a></strong></li>
+  </ul>
+  <header>
+      <a href='../Home/home.html'><img id='logoimg' src="../Selected_Product/logoRevised.png" alt="logo"></a>
+      <nav>
+          <ul class="head">
+              <li id="drop" onmouseover="changeColor()" onclick="dropdown()"><a href='#' class="dropbtn"><strong id="shop">Shop<i id="down" class="fa-solid fa-caret-down" style="color: black;"></i></strong></a></li>
+              <div id="myDropdown" class="dropdown-content">
+                  <a href="../Products/products.html">Coffee</a>
+                  <a href="../Products/products.html">Tea</a>
+                  <a href="../Products/products.html">Equipment</a>
+                  <a href="../Products/products.html">Gifts</a>
+              </div>
+              <li><a href='#'><strong>Subscriptions</a></strong></li>
+              <li><a href='#'><strong>Bundles</a></strong></li>
+          </ul>
+      </nav>
+      <a onmouseover="changeColorCart()"href='../Cart/cart.html'><strong><i id='cart' class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></strong>
+  </header>
 
-      <div class="navigation">
-      <div class="top_navbar">
-        <ul class="navbar-nav">
-          <li><a href="#"><i class="fa-solid fa-location-dot"></i>&nbsp;Location</a></li>
-          <li><a href="#"><i class="fa-solid fa-car"></i>&nbsp;Order Pickup</a></li>
-          <li><a href="#"><i class="fa-solid fa-user"></i>&nbsp;Sign In</a></li>
-        </ul>
-      </div>
-
-      <div class="bottom_navbar">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <div class="dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-              <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../Products/products.html">Coffee</a></li>
-              <li><a class="dropdown-item" href="../Products/products.html">Tea</a></li>
-              <li><a class="dropdown-item" href="../Products/products.html">Gear</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item"><a href="../Products/products.html">Subscriptions</a></li>
-          <li class="nav-item"><a href="../Products/products.html">Bundles</a></li>
-        </ul>
-        <form class="d-inline-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        <a href="#title"><i class="cart fa-solid fa-cart-shopping fa-xl"></i></a>
-      </div>
-      </div>
-      </div>
-    </div>
-  </nav>
-
-  <div class="title">
-    <h1>Shopping Cart</h1>
-  </div>
+  <section>
+    <h1><strong>Shopping Cart</strong></h1>
+  </section>
 
   <div class="body_container">
     <div class="progressBar col-6 offset-3"><div class="progressLine" id="progress"></div></div>
