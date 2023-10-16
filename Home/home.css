@@ -125,7 +125,6 @@ body{
     position: fixed;
     top: 0vh;
     left: 2vw;
-    z-index: 9;
 }
 .logo img{
     position: absolute;

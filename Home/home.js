@@ -1,4 +1,3 @@
-const nav = document.querySelector('.menu')
 const shop = document.getElementById('shop-')
 const dropdown = document.querySelector('.dropdownmenu')
 
@@ -15,6 +14,7 @@ dropdown.addEventListener('mouseout', ()=>{
     dropdown.style.display = "none";
 })
 
+const nav = document.querySelector('.menu')
 window.addEventListener('scroll', fixNav)
 function fixNav() {
     if(window.scrollY > nav.offsetHeight + 120) {
