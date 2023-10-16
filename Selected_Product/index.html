@@ -22,10 +22,10 @@
             <ul class="head">
                 <li id="drop" onmouseover="changeColor()" onclick="dropdown()"><a href='#' class="dropbtn"><strong id="shop">Shop<i id="down" class="fa-solid fa-caret-down" style="color: black;"></i></strong></a></li>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Coffee</a>
-                    <a href="#">Tea</a>
-                    <a href="#">Equipment</a>
-                    <a href="#">Gifts</a>
+                    <a href="../Products/products.html">Coffee</a>
+                    <a href="../Products/products.html">Tea</a>
+                    <a href="../Products/products.html">Equipment</a>
+                    <a href="../Products/products.html">Gifts</a>
                 </div>
                 <li><a href='#'><strong>Subscriptions</a></strong></li>
                 <li><a href='#'><strong>Bundles</a></strong></li>
@@ -35,9 +35,9 @@
     </header>
     <img src='https://schuilcoffee.com/cdn/shop/products/White-Heather_39ee22bf-f43c-4451-9f09-c5543e40bb67.png?v=1603490106&width=535' alt="coffee1" id="product">
     <div id="info">
-        <h1>Knightly Dark Roast</h1>
+        <h1>White Heather</h1>
         <h1 id="cost">$11.99 USD</h1>
-        <p>"Knightly Dark Roast" stands as a coffee bean of distinction, offering a robust and flavorful profile tailored for devoted coffee connoisseurs. 
+        <p>"White Heather" stands as a coffee bean of distinction, offering a robust and flavorful profile tailored for devoted coffee connoisseurs. 
             Carefully curated and expertly roasted, this exceptional blend is celebrated for its profound and rich character, 
             making it the perfect choice for those in pursuit of a deeply satisfying coffee experience.</p>
         <h2><strong>Tasting Notes</strong></h2>
@@ -49,7 +49,28 @@
         <input class="rbtn" type="radio" id="twelve-oz" name="size" value="12oz">
         <label for="12oz">12 oz.<span>($0.99/oz)</span></label>
         <input class="rbtn" type="radio" id="five-lb" name="size" value="5lb">
-        <label for="5oz">5 lb.<span>($0.79/oz)</span></label>
+        <label for="5oz">5 lb.<span>($0.79/oz)</span></label><br>
+        <h2 class="dual"><strong>Grind</strong></h2>
+        <h2 class="dual" id="end"><strong>Quantity</strong></h2>
+        <select id="coffee-drop" name="coffee">
+            <option value="whole-bean">Whole Bean</option>
+            <option value="coarse">Coarse (Cold Brew)</option>
+            <option value="french-press">French Press</option>
+            <option value="drip">Drip</option>
+            <option value="espress">Espresso</option>
+        </select>
+        <select id="quant" name="quant">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <input class="rbtn2" type="radio" id="one" name="size" value="one">
+        <label for="one">One-time purchase: $11.99</label><br>
+        <input class="rbtn2" type="radio" id="sub" name="size" value="sub">
+        <label for="sub">Subscribe & save (10%): $10.79</label><br>
+        <h1 id="add">ADD TO CART</h1>
     </div>
 </body>
 </html>

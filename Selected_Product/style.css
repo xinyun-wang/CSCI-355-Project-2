@@ -191,7 +191,7 @@ h1 {
 }
 
 #cost {
-    padding-left: 100px;
+    padding-left: 180px;
 }
 
 h1, #cost {
@@ -226,4 +226,47 @@ span {
 
 #five-lb {
     margin-left: 15px;
+}
+
+.dual {
+    display: inline-block;
+}
+
+#end {
+    padding-left: 180px;
+}
+
+#coffee-drop {
+    margin-top: 10px;
+    display: block;
+}
+
+#quant {
+    margin-top: 10px;
+    position: absolute;
+    display: inline-block;
+    margin-left: 282px;
+    bottom: 310px;
+}
+
+.rbtn2 {
+    margin-top: 20px;
+}
+
+#add {
+    cursor: pointer;
+    margin-top: 20px;
+    padding-top: 15px;
+    background-color: var(--qc-red);
+    color: white;
+    width: 100%;
+    text-align: center;
+    border: 1px var(--qc-red) solid;
+    border-radius: 4px;
+    transition: all .2s ease-in-out; 
+}
+
+
+#add:hover {
+    transform: scale(1.1);
 }
