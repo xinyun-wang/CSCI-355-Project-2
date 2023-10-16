@@ -34,6 +34,18 @@ header {
     border: solid 1px rgba(0,0,0,0.15);
 }
 
+#logo {
+    position:absolute;
+    left: 40px;
+    cursor: pointer;
+    border: 1px solid var(--qc-red);
+    border-radius: 0 0 20px 20px;
+    height: 160px;
+    width: 400px;
+    margin-top: -110px;
+    box-shadow: 0 5px 15px rgba(36, 19, 21, 0.4);
+}
+
 img {
     position:absolute;
     left: 40px;
@@ -122,6 +134,7 @@ section {
     height: 50px;
     margin-top: 60px;
     background-image: url(images/coffee_bg_revised.png);
+    box-shadow: 0 5px 15px rgba(36, 19, 21, 0.4);
     opacity: 0.8;
 }
 
@@ -231,13 +244,14 @@ input {
     padding-left: 20px;
     padding-bottom: -40px;
     border-radius: 30px 30px 0 0;
-    /* border: 2px solid var(--qc-red); */
     border: none;
 }
 
 .side {
     font-size: 1.7em;
+    width: 99%;
     list-style: none;
+    box-shadow: 0 5px 15px rgba(36, 19, 21, 0.4);
 }
 
 .side li, .side a {
@@ -323,6 +337,7 @@ input {
     padding-top: 50px;
     row-gap: 300px;
     column-gap: 110px;
+    padding-bottom: 250px;
 }
 
 .prod {
@@ -331,7 +346,8 @@ input {
     text-align: center;
     padding-top: 15px;
     height: 330px;
-    background-color: #F8F8F8;
+    background: rgb(222,221,240);
+    background: linear-gradient(90deg, rgba(222,221,240,0.4) 0%, rgba(255,240,240,0.4) 25%, rgba(255,255,255,0.4) 56%, rgba(246,236,238,0.4) 79%, rgba(255,255,255,0.4) 100%);
     border: black 1px solid;
     border-radius: 4px;
     font-size: 1.3em;
@@ -341,7 +357,6 @@ input {
 
 .prod:hover {
     box-shadow: 0 5px 15px rgba(231, 25, 57, .4);
-    transform: scale(1.1);
 }
 
 #myDropdown {
@@ -398,7 +413,7 @@ input {
     color: var(--qc-red);
 }
 
-.prod-1 img {
+.prod-1 img, .prod-4 img, .prod-7 img  {
     position: absolute;
     height: 300px;
     width: 300px;
@@ -407,7 +422,7 @@ input {
     margin-left: -68px;
 }
 
-.prod-2 img {
+.prod-2 img, .prod-5 img, .prod-8 img  {
     position: absolute;
     height: 300px;
     width: 300px;
@@ -416,6 +431,22 @@ input {
     margin-left: 295px;
 }
 
+.prod-3 img, .prod-6 img, .prod-9 img  {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border: none;
+    margin-top: -5px;
+    margin-left: 655px;
+}
+
+.prod img {
+    transition: all .2s ease-in-out; 
+}
+
+.prod img:hover {
+    transform: scale(1.1);
+}
 
 #myDropdown2 {
     overflow: hidden;
