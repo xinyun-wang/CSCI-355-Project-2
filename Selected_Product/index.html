@@ -2,67 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Selected Item Page</title>
-    <style>
-        
-    </style>
+    <link rel="shortcut icon" type="image/x-icon" href="qc-logo.JPG" />
+    <link href="style.css" rel="stylesheet">
+    <script src="selected_product.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Coffee - QCR</title>
 </head>
 <body>
-    <section class="bg"></section>
-    <div class="loading-text">0%</div>
-    <script src="selected_product.js"></script>
-    <div class="container">
-        <header> <!-- Logo and search bar -->
-            <a href="/homepage.html"><img src="logo.png" id="logo-id" alt="Website Logo"></a>
-            <form action="/search" method="get" id="search-form">
-                <input type="text" name="query" placeholder="Search...">
-                <button type="submit">Search</button>
-            </form>
-            <nav id="account-login"> <!-- Login / Sign up / Profile -->
-                <ul>
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/signup">Sign Up</a></li>
-                    <li><a href="/profile">My Profile</a></li>
-                </ul>
-            </nav>
-        </header>
-        <nav id="main-navigation"> <!-- Navigation Menu -->
-                <ul>
-                    <li><a href="/">Shop</a></li>
-                    <li><a href="/shop">Subscripitons</a></li>
-                    <li><a href="/cart">Bundles</a></li>
-                </ul>
-            </nav>
+    <ul class="top">
+        <li><strong>Free Shipping for QC Students<i class="fa-solid fa-truck-fast" style="color: #e71939;"></i></strong></li>
+        <li><a id="loc" href='#'><strong><i class="fa-solid fa-map-location-dot" style="color: #e71939;"></i>Location</strong></a></li>
+        <li><a href='#'><strong><i class="fa-solid fa-car" style="color: #e71939;"></i>Order Pickup</strong></a></li>
+        <li><a href='#'><strong><i class="fa-solid fa-user" style="color: #e71939;"></i>Sign in</a></strong></li>
+    </ul>
+    <header>
+        <a href='../Home/home.html'><img id='logo' src="logoRevised.png" alt="logo"></a>
+        <nav>
+            <ul class="head">
+                <li id="drop" onmouseover="changeColor()" onclick="dropdown()"><a href='#' class="dropbtn"><strong id="shop">Shop<i id="down" class="fa-solid fa-caret-down" style="color: black;"></i></strong></a></li>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Coffee</a>
+                    <a href="#">Tea</a>
+                    <a href="#">Equipment</a>
+                    <a href="#">Gifts</a>
+                </div>
+                <li><a href='#'><strong>Subscriptions</a></strong></li>
+                <li><a href='#'><strong>Bundles</a></strong></li>
+            </ul>
         </nav>
-        <main>
-            <div class="product" >
-                <img src="coffeebag.png" alt="Knightly Dark Roast" class="dark-roast-image">
-                <div class="text-box">
-                    <h2>Knightly Dark Roast <span class="price-item">
-    $11.99 USD
-</span>    </h2>
-                    <p>"Knightly Dark Roast" stands as a coffee bean of distinction, offering a robust and flavorful profile tailored for devoted coffee connoisseurs. Carefully curated and expertly roasted, this exceptional blend is celebrated for its profound and rich character, making it the perfect choice for those in pursuit of a deeply satisfying coffee experience.</p>
-                    <h4>Tasting Notes</h4>
-                    <div class="box"> <img src="coffeemug.png" alt="coffeemug">
-                        Bittersweet and Rich
-                      </div> 
-                    <div class="box"> <img src="coffeebean.png" alt="coffeebean">
-                        Bold and Full-Bodied
-                      </div>
-                    <p4> <div class="box"> <img src="cherry.png" alt="cherry">
-                        Low Fruitiness
-                      </div>
-                    </div>  
-            </div>
-
+        <a onmouseover="changeColorCart()"href='../Cart/cart.html'><strong><i id='cart' class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></strong>
+    </header>
+    <img src='https://schuilcoffee.com/cdn/shop/products/White-Heather_39ee22bf-f43c-4451-9f09-c5543e40bb67.png?v=1603490106&width=535' alt="coffee1" id="product">
+    <div id="info">
+        <h1>Knightly Dark Roast</h1>
+        <h1 id="cost">$11.99 USD</h1>
+        <p>"Knightly Dark Roast" stands as a coffee bean of distinction, offering a robust and flavorful profile tailored for devoted coffee connoisseurs. 
+            Carefully curated and expertly roasted, this exceptional blend is celebrated for its profound and rich character, 
+            making it the perfect choice for those in pursuit of a deeply satisfying coffee experience.</p>
+        <h2><strong>Tasting Notes</strong></h2>
+        <div><i class="fa-brands fa-canadian-maple-leaf" style="color: #e71939;"></i>Maple</div>
+        <div><i class="fa-solid fa-mortar-pestle" style="color: #e71939;"></i>Warm Spices</div>
+        <div><i class="fa-solid fa-wheat-awn" style="color: #e71939;"></i>Organic Ingerdients</div>
+        <hr>
+        <h2><strong>Size</strong></h2>
+        <input class="rbtn" type="radio" id="twelve-oz" name="size" value="12oz">
+        <label for="12oz">12 oz.<span>($0.99/oz)</span></label>
+        <input class="rbtn" type="radio" id="five-lb" name="size" value="5lb">
+        <label for="5oz">5 lb.<span>($0.79/oz)</span></label>
     </div>
 </body>
 </html>
-
-
-
-
-
