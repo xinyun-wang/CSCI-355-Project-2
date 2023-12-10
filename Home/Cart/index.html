@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="headerTop">
+    <ul>
+      <li class="col-7"><p>Free Shipping on Orders $49+ | $99+ Free 2Day | 1(800) 555-0199</p></li>
+      <li class="col-3"><p>Contact Us: Mon-Fri, 9-5 EST</p></li>
+      <li class="col-3 offset-1">
+        <form action="/search" method="get" role="search" id="search-header-desktop" class="search">
+          <span>
+            <label for="search"></label>
+            <input id="search" type="search" name="" value="" placeholder="Search..." role="combobox" aria-expanded="false" aria-owns="predictive-search-results-list" aria-controls="predictive-search-results-list" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false">    
+            <button class="search" aria-label="Search"><i class="fas fa-search fa-lg" id="search-icon"></i></button>             
+          </span>
+        </form>
+      </li>
+      <li class="col-1 offset-3"><a href="index.html"><i class="fas fa-bag-shopping fa-lg"></i></a></li>
+      <li class="col-1"><a href="#"><i class="fas fa-portrait fa-lg"></i></a></li>
+    </ul>
+  </div>
+  <div class="headerBottom">
+    <ul class="head">
+      <li><a href='../index.html'><strong>Home</a></strong></li>
+      <li id="drop" onclick="dropdown()"><a href='#' class="dropbtn"><strong id="shop">Shop Teas<i id="down" class="fa-solid fa-caret-down" style="color: black;"></i></strong></a></li>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../Products/index.html">Loose Leaf Tea Types</a>
+        <a href="../Products/index.html">Flavor Profiles</a>
+        <a href="../Products/index.html">Curated Collections</a>
+      </div>
+      <li><a href='../Products/index.html'><strong>Shop Wellness</a></strong></li>
+      <li><a href='../Products/index.html'><strong>Shop Matcha</a></strong></li>
+      <li><a href='../index.html'><strong>Gift Cards</a></strong></li>
+      <li><a href='../index.html'><strong>Accessories & Gifts</a></strong></li>
+      <li><a href='../index.html'><strong>Explore</a></strong></li>
+      <li><a href='../index.html'><strong>What's New?</a></strong></li>
+    </ul>
+  </div>
+
+  <div class="promo"><p class="text-center p-2">Cozy Up To Our Winter Essentials Collection!</p></div>
+
+  <div class="body_container">
+    <h2 id="text" class="m-5">Starting...</h2>
+    <div class="row">
+      <ul class="item col-4 offset-1">
+        <h3>Item</h3> <hr/>
+        <li id="item1" class="list-group-item d-inline-flex">
+          <img src="tea.webp" alt="coffee">
+          <div class="itemInfo">
+            <h4>Organic Tea 1</h4>
+            <p></p>
+          </div>
+        </li>
+        <li id="item2" class="list-group-item d-inline-flex">
+          <img src="tea.webp" alt="coffee">
+          <div class="itemInfo">
+            <h4>Organic Tea 2</h4>
+            <p></p>
+          </div>
+        </li>
+        <li id="item3" class="list-group-item d-inline-flex">
+          <img src="tea.webp" alt="coffee">
+          <div class="itemInfo">
+            <h4>Organic Tea 3</h4>
+            <p></p>
+          </div>
+        </li>
+        <li id="item4" class="list-group-item d-inline-flex">
+          <img src="tea.webp" alt="coffee">
+          <div class="itemInfo">
+            <h4>Organic Tea 4</h4>
+            <p></p>
+          </div>
+        </li>
+        <li id="item5" class="list-group-item d-inline-flex">
+          <img src="tea.webp" alt="coffee">
+          <div class="itemInfo">
+            <h4>Organic Tea 5</h4>
+            <p></p>
+          </div>
+        </li>
+      </ul>
+      <ul class="price col-1 offset-1 d-block row-gap-3">
+        <h3>Price</h3> <hr/>
+        <li id="price1" class="list-group-item align-middle">
+          <h4>$21.00</h4>
+        </li>
+        <li id="price2" class="list-group-item align-middle">
+          <h4>$22.00</h4>
+        </li>
+        <li id="price3" class="list-group-item align-middle">
+          <h4>$23.00</h4>
+        </li>
+        <li id="price4" class="list-group-item align-middle">
+          <h4>$24.00</h4>
+        </li>
+        <li id="price5" class="list-group-item align-middle">
+          <h4>$25.00</h4>
+        </li>
+      </ul>
+      <ul class="quantity col-1 offset-1 d-block row-gap-3">
+        <h3>Quantity</h3> <hr/>
+        <li id="quantity1" class="list-group-item align-middle">
+          <div class="quantityBtn">
+            <button class="subtract"> - </button> <span> 1 </span> <button class="add"> + </button>
+          </div>
+        </li>
+        <li id="quantity2" class="list-group-item align-middle">
+          <div class="quantityBtn">
+            <button class="subtract"> - </button> <span> 1 </span> <button class="add"> + </button>
+          </div>
+        </li>
+        <li id="quantity3" class="list-group-item align-middle">
+          <div class="quantityBtn">
+            <button class="subtract"> - </button> <span> 1 </span> <button class="add"> + </button>
+          </div>
+        </li>
+        <li id="quantity4" class="list-group-item align-middle">
+          <div class="quantityBtn">
+            <button class="subtract"> - </button> <span> 1 </span> <button class="add"> + </button>
+          </div>
+        </li>
+        <li id="quantity5" class="list-group-item align-middle">
+          <div class="quantityBtn">
+            <button class="subtract"> - </button> <span> 1 </span> <button class="add"> + </button>
+          </div>
+        </li>
+      </ul>
+      <ul class="price col-1 offset-1 d-block row-gap-3">
+        <h3>Total</h3> <hr/>
+        <li id="price1" class="list-group-item align-middle">
+          <h4>$21.00</h4>
+        </li>
+        <li id="price2" class="list-group-item align-middle">
+          <h4>$22.00</h4>
+        </li>
+        <li id="price3" class="list-group-item align-middle">
+          <h4>$23.00</h4>
+        </li>
+        <li id="price4" class="list-group-item align-middle">
+          <h4>$24.00</h4>
+        </li>
+        <li id="price5" class="list-group-item align-middle">
+          <h4>$25.00</h4>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="order-summary text-center col-6 offset-3">
+        <hr/>
+        <div class="label subtotal">
+          <p>Subtotal</p>
+          <p id="subtotal">$30.00</p>
+        </div>
+        <div class="label shipping">
+          <p>Shipping</p>
+          <p id="shipping">$5.00</p>
+        </div>
+        <div class="label total">
+          <p>Total</p>
+          <p id="total">$35.00</p>
+        </div>
+        <button id="checkout">CHECKOUT</button>
+      </div> 
+    </div>
+  </div>
+  <script src="cart.js" defer></script>
+</body>
+</html>
