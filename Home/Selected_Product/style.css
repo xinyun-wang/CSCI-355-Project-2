@@ -270,3 +270,33 @@ span {
 #add:hover {
     transform: scale(1.1);
 }
+
+#scrollingTextContainer {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Adjust as needed */
+    border: 1px solid black; /* For visibility */
+}
+
+#scrollingText {
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+#scrollingText {
+    font-family: 'Georgia', serif; /* or 'Times New Roman', serif; */
+    font-size: 28px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #c04000; /* Example warm red; adjust the shade as needed */
+}

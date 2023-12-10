@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="qc-logo.JPG" />
+    <link rel="shortcut icon" type="image/x-icon" href="qc-logo.JPG" /> 
     <link href="style.css" rel="stylesheet">
-    <script src="selected_product.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Coffee - QCR</title>
+    <script src="selected_product.js"></script>
+    <title>Organic Immunity Blend</title>
 </head>
 <body>
-    <ul class="top">
+    <ul class="top"> <!-- this is the code for the truck, map, car, and user on the top part of the webpage-->
         <li><strong>Free Shipping for QC Students<i class="fa-solid fa-truck-fast" style="color: #e71939;"></i></strong></li>
         <li><a id="loc" href='#'><strong><i class="fa-solid fa-map-location-dot" style="color: #e71939;"></i>Location</strong></a></li>
         <li><a href='#'><strong><i class="fa-solid fa-car" style="color: #e71939;"></i>Order Pickup</strong></a></li>
@@ -33,31 +33,30 @@
         </nav>
         <a onmouseover="changeColorCart()"href='../Cart/index.html'><strong><i id='cart' class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></strong>
     </header>
-    <img src='https://schuilcoffee.com/cdn/shop/products/White-Heather_39ee22bf-f43c-4451-9f09-c5543e40bb67.png?v=1603490106&width=535' alt="coffee1" id="product">
+    <img src='https://fullleafteacompany.com/cdn/shop/products/product-464694.jpg?v=1650667455&width=880' alt="coffee1" id="product">
     <div id="info">
-        <h1>White Heather</h1>
+        <div id="scrollingTextContainer">
+            <p id="scrollingText">Organic Immunity Blend </p>
+        </div>
+        <button id="increaseSpeed">Increase Speed</button>
+        <button id="decreaseSpeed">Decrease Speed</button>
         <h1 id="cost">$11.99 USD</h1>
-        <p>"White Heather" stands as a coffee bean of distinction, offering a robust and flavorful profile tailored for devoted coffee connoisseurs. 
-            Carefully curated and expertly roasted, this exceptional blend is celebrated for its profound and rich character, 
-            making it the perfect choice for those in pursuit of a deeply satisfying coffee experience.</p>
+        <p>Fight back against cold season! Our Organic Immunity Blend is a loose-leaf herbal tea made from a blend of organic herbs, fruits, and spices that are known for their immune-boosting properties. This tea contains echinacea, elderberry, peppermint, and hibiscus, with a delightful Rooibos tea base which can help to support the body's natural defenses against illness and disease. Your cold doesn't stand a chance!</p>
         <h2><strong>Tasting Notes</strong></h2>
-        <div><i class="fa-brands fa-canadian-maple-leaf" style="color: #e71939;"></i>Maple</div>
-        <div><i class="fa-solid fa-mortar-pestle" style="color: #e71939;"></i>Warm Spices</div>
-        <div><i class="fa-solid fa-wheat-awn" style="color: #e71939;"></i>Organic Ingerdients</div>
+        <div><i class="fa-solid fa-candy-cane" style="color: #e71939;"></i>Peppermint</div>
+        <div><i class="fa-solid fa-holly-berry" style="color: #e71939;"></i>Elderberries</div>
+        <div><i class="fa-solid fa-leaf" style="color: #e71939;"></i>Hibiscus</div>
         <hr>
         <h2><strong>Size</strong></h2>
         <input class="rbtn" type="radio" id="twelve-oz" name="size" value="12oz">
-        <label for="12oz">12 oz.<span>($0.99/oz)</span></label>
+        <label for="12oz">2 oz.<span>($0.99/oz)</span></label>
         <input class="rbtn" type="radio" id="five-lb" name="size" value="5lb">
-        <label for="5oz">5 lb.<span>($0.79/oz)</span></label><br>
-        <h2 class="dual"><strong>Grind</strong></h2>
+        <label for="5oz">1/2 lb.<span>($0.79/oz)</span></label><br>
+        <h2 class="dual"><strong>Leaf</strong></h2>
         <h2 class="dual" id="end"><strong>Quantity</strong></h2>
         <select id="coffee-drop" name="coffee">
-            <option value="whole-bean">Whole Bean</option>
-            <option value="coarse">Coarse (Cold Brew)</option>
-            <option value="french-press">French Press</option>
-            <option value="drip">Drip</option>
-            <option value="espress">Espresso</option>
+            <option value="whole-bean">Tea Bag</option>
+            <option value="coarse">Loose-Leaf</option>
         </select>
         <select id="quant" name="quant">
             <option value="1">1</option>
@@ -74,3 +73,4 @@
     </div>
 </body>
 </html>
+
