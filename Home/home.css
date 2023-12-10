@@ -410,6 +410,16 @@ a{
     left: 46.6vw;
 }
 
+.logo{
+    position: fixed;
+    scale: 150%;
+    z-index: 99;
+    left: 8vh;
+}
+.logo img{
+    width: 153px;
+}
+
 #blank{
     display: flex;
     position: relative;
