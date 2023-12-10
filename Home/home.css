@@ -1,6 +1,15 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Nunito:wght@400;500&family=Playfair+Display&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Nunito:wght@400;500&family=Playfair+Display&family=Roboto:wght@300&display=swap');
+:root {
+    --c: #384630;
+    --a: #f3f6f2;
+    --w: #342828;
+    --d: #e5ede1;
+    --e: #4a6d38;
+    --f: #203d5d;
+    --g: rgb(195, 218, 247);
+}
 
 *{
     font-family: sans-serif;
@@ -15,32 +24,32 @@ body{
     top: 0%;
     height: 5vh;
     width: 100%;
-    color: #252525;
+    background-color: var(--f);
 }
 
 .top p{
     position: fixed;
-    font-size: 8px;
+    font-size: 18px;
     scale: 90%;
-    top: 0vb;
+    top: -.8vb;
     left: 42.5vb;
-    color: #dd2424;
+    color:var(--a);
 }
 .top a{
     position: relative;
     display: flexbox;
     scale: 90%;
-    font-size: 8px;
-    padding: 3px 14px;
-    top: 0.5vb;
-    left: 128vb;
-    color: #dd2424;
+    font-size: 16px;
+    padding: 6px 10px;
+    top: 0.4vb;
+    left: 145vb;
+    color: var(--a);
 }
 .top a:hover{
-    background-color: #d6d6d6;
+    background-color: var(--w);
     width:fit-content;
     height: fit-content;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 .menu {
     font-family: sans-serif;
@@ -50,61 +59,68 @@ body{
     height: 11.2vh;
     left: 0;
     width: 100%;
-    padding: 10px;
-    background-color: #ffffff; 
-    color: #000000; 
+    background-color: var(--g);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 99;
 }
 .menushop a{
     font-family: "Roboto";
     position: relative;
     left: 39vb;
-    top: 6vb;
-    font-size: 14px;
-    font-weight: 500;
-    padding:20px; 
-    color: #dd2424;
+    top: 6.5vb;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px 30px; 
+    color: var(--f);
 }
-.menu.active a{
-    color: #ffffff;
+.menushop a:hover, #health.active,#flavor.active,#leaf.active{
+    color: var(--a);
+    background-color: var(--f);
+    border-radius: 3px;
 }
-.menu.active a:hover{
-    color: rgb(255, 201, 138);
+
+.menu.active .top,.menu.active a:hover, .menu.active #health.active,.menu.active #flavor.active,.menu.active #leaf.active{
+    color: var(--a);
+    background-color: var(--c);
 }
-.menushop a:hover{
-    color:#d18233;
+
+.menu.active a, .menu.active #shopping-cart{
+    color:var(--c);
 }
+
 .menu.active {
-    background-color: #dd2424; 
+    background-color: #f3f6f2; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
 
-.menu.active p{
-    color: #ffffff;
+.menu.active p,.menu.active .top a{
+    color:var(--a);
   }
 .menu.active .top a:hover{
-    background-color: #252525;
+    color: var(--c);
+    background-color:var(--a);
 }
+.menu.active #search{
+    color:var(--a);
+    border: 1.5px solid var(--c); 
+}
+
 .search {
     position: fixed;
-    top: 8vb;
-    right: 30vb;
+    top: 6.7vb;
+    scale: 160%;
+    right: 34vb;
   }
-.menu.active #shopping-cart{
-    color: #ffffff;
-}
+
 #search-icon {
     position: fixed;
     transform: translateX(-170%) translateY(20%);
     scale: 80%;
-    color: #dd2424; 
-}
-.menu.active #search{
-    color: #000000; 
-    border: 1.5px solid #f4f4f4; 
+    color: var(--c); 
 }
 #search{
-    color: #dd2424; 
-    border: 1.5px solid #dd2424; 
+    color: var(--f); 
+    border: 1.5px solid var(--f); 
     border-radius: 3px;
 }
 #search-icon:hover {
@@ -112,13 +128,19 @@ body{
 }
 #shopping-cart{
     position: fixed;
-    top: 8.5vh;
-    right: 11.4vw;
-    color: #dd2424; 
+    top: .3vh;
+    right: -0.9vw;
+    color: var(--f); 
+    scale: 135%;
 }
 
 #shopping-cart:hover{
-    scale: 105%; 
+    scale: 140%; 
+}
+
+#gift{
+    position: fixed;
+    left: -23px;
 }
 
 .logo {
@@ -130,192 +152,274 @@ body{
     position: absolute;
     z-index: 9;
 }
-.horizontal-line{
-    position: fixed;
-    left: 0;
-    top: 5vh;
-    width: 100%;
-    height: .5px; 
-    background-color: #dcdcdc;
-}
 a{
     color: #000000;
     text-decoration: none;
 }
 
-#angle{
-    position: fixed;
-    top: 8.9vh;
-    scale: 80%;
-}
-.dropdownmenu{  
-    display: none; 
-    position: fixed;
-    flex-direction: column;
-    text-align: left;
-    width: 13vw;
-    top:13vh;
-    left: 21vw;
-    background-color: #ffffff;
-    border-radius: 2px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-.dropdownmenu a{
-    color:#d18233;
-    font-size: 10px;
-    padding:10px;
-    line-height: 35px;
-}
-.dropdownmenu div:hover{
-    border: 1px solid;
-    border-radius: 2px;
-    border-color: #f8bc5b;
-    background-color: #dd2424; 
-    scale: 103%;
-}
-.dropdownmenu a:hover{
-    color: #fff;
+.carousel{ 
+    position: absolute;
+    display: flex;
+    right: 1px;
+    top: 13.5vh;
+    justify-content: center;
+    overflow: hidden;
 }
 .banner{
-    position: absolute;
-    display: flex;
-    height: 90vh;
-    width: 100%;
-    top: 10vh;
-    left: -13vh;
-    background-color: #ff9054;
-    padding-left: 100px;
-    padding-right: 100px;
-    z-index: -10;
+    display: flex; 
+    position: relative;
+    width: 100vw;
+    transform: translateX(0);
+    transition: transform 1.5s ease-in-out;
+    z-index: -2;
+    padding-bottom: 50px;
+   
 }
 .banner img{
-    height: 90vh;
-    width: 90%;
-    position: absolute;
-    left: 12vw;
+    display: block;
+    position: relative;
+    width: 100vw;
+    padding-bottom: 10vh;
+    object-fit: cover; 
+    background-color: #203d5d;
 }
-.hometext{
-    display: grid;
-}
-.hometext h1{
+.cozy a{
     font-family: 'Playfair Display';
-    font-weight: 100;
-    font-size: 60px;
-    position: relative;
-    left: 15%;
-    top: 28vh;
-    width: fit-content;
-    color: #fff;
+    font-size: 20px;
+    font-size: larger;
+    letter-spacing: 1px;
+    display: contents;
+    position: absolute;
+    color: var(--a);
 }
-.hometext p{
-    font-family: "Roboto";
-    position: relative;
-    display: inline-block;
-    width: 450px;
-    letter-spacing:.05vh;
-    top: 24vh;
-    left: 15%;
-    font-size: 13px;
-    color: #fff;
-}
-#season{
-    position: relative;
-    background-color: #1a1b35;
-    color: #f9eed8;
-    font-size: 8px;
-    padding: 14px 20px;
-    border-radius: 3px;
-    left: 10vw;
-    top: -5vh;
-}
-#all{
-    position: relative;
-    color: #fff;
-    font-size: 8px;
-    left: 12vw;
-    top: -5vh;
-    padding-bottom: 4px;
-    border-bottom: 1.5px #f5f5f5 solid;
-}
-.shop{
-    position: relative;
-    top: 40vh;
-    left: 5%;
-}
-.shop a{
-    font-family: "Roboto";
-    font-weight: 500;
-}
-.text{
-    position: relative;
-    top: 50vh;
-}
-.text h1{
-    font-family: "Cormorant Garamond";
-    font-weight: lighter;
-    position: relative;
-    font-size: 40px;
-    left: 40vw;
-    top: 15vh;
-}
-.text h3{
-    position: relative;
-    font-size: 8px;
-    left: 45vw;
-    top: 18vh;
-    color: #dd2424;
-}
-
-.SpecialtyCoffees{
-    font-family: sans-serif;
-    font-size: 8px;
-    font-weight: 600;
+.cozy {
     display: flex;
+    position: absolute;
+    background-color: var(--f);
+    top: 11vh;
+    width: 106vw;
+    justify-content: center;
+    padding: 5px 0px;
+    margin-left: -10px;
+}
+#cozy:hover{
+    color: #fff5cf;
+}
+.FeaturedTeaContiner, .WinterEssentialsContiner{
     position: relative;
+    top: 85vh;
     width: 100%;
     height: 100%;
-    top: 73vh;
-    align-items: center;
-    left: 10.5vw;
+    border-bottom: 0.5px solid #e0e0e0;
 }
-.SpecialtyCoffees div{
+
+.FeaturedTeaContiner{
+    background-color: #f2f5f0;
+    padding: 10px 30px 20px;
+    right: 6px;
+    
+    overflow: hidden;
+}
+
+.FeaturedTeaContiner h1, .WinterEssentialsContiner h1{
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+    color:var(--c);
+}
+.FeaturedTea, .WinterEssentials{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.WinterEssentials{
+    transform: translateY(-40px);
+}
+.WinterEssentials.active{
+    transform: translateY(5px);
+    transition: ease-out 1.1s;
+}
+.FeaturedTea div{
     display: flexbox;
     align-content: center;
-    width: 200px;
+    width: 220px;
     padding: 25px;
     text-align: center;
     line-height: 35px;
 }
-.SpecialtyCoffees div:hover{
-    background-color: rgb(244, 249, 249);
-    scale: 102%;
-    font-size: 8px;
-    transition: ease-in 0.3s;
+
+.FeaturedTea div img{
+    scale: 200%;
+    margin: 55px;
 }
-#ALL{
-    font-family: "Roboto";
+
+.FeaturedTea div img:hover{
+    scale: 205%;
+    transition: ease-in 0.2s;
+}
+.FeaturedTea  #text{
+    font-size: 18px;
+}
+.FeaturedTea  #text:hover{
+    text-decoration: underline;
+    color: var(--e);
+}
+.WinterEssentials div{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 220px;
+    padding: 25px;
+    margin: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.text h1{
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    padding: 20px 0px;
+    color: #203d5d;
+}
+
+#rate{
+    border: 0px;
+    display: block;
     position: relative;
-    background-color:#dd2424;
-    color: #fffefd;
-    font-size: 8px;
-    font-weight: 500;
-    padding: 14px 20px;
-    border-radius: 3px;
-    top: 83vh;
-    left: 45vw;
+    padding: 0;
+    scale: 90%;
+    right: 10px;
+    top: 20px;
+}
+
+.tea3 #rate{
+    top: 0px;
+}
+.WinterEssentials img{
+    scale: 200%;
+    padding-bottom: 10px;
+    margin: 55px;
+}
+
+#rate p, #p{
+    position: relative;
+    padding: 0;
+    top: -15px;
+}
+.WinterEssentials #text2,#rate p{
+    color: #404840;
+}
+
+.WinterEssentials #text2:hover{
+    text-decoration: underline;
+    color: var(--e);
+}
+
+#f{
+    font-size: 12px;
+}
+
+.tea3 #f,.tea3 #p{
+    position: relative;
+    display: block;
+    top: -21px;
+}
+.tea3 #p{
+    top: -36px;
+}
+
+#shop3{
+    font-family: "Cormorant Garamond";
+    display: block;
+    position: absolute;
+    top: 49vh;
+    margin: 0px 10px;
+    padding: 10px 64px;
+    background-color: var(--c);
+    color: #ffffff;
+    font-weight: 300;
+    transition: ease-in-out 0.6s;
+}
+
+#shop3:hover, #shoptea:hover{
+    color: var(--c);
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid var(--d);
+    transition: ease-in-out 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#shoptea{
+    font-family: "Cormorant Garamond";
+    display:block;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    padding: 10px 40px;
+    margin-top: 55px;
+    left: 42.6vw;
+    background-color: var(--c);
+     color: #ffffff;
+    font-weight: 300;
+    transition: ease-in-out 0.6s;
+}
+
+.WinterEssentialsContiner{
+    padding-bottom: 60px;
+}
+
+.LooseLeaf, .FlavorProfiles, .HealthBenefit{  
+    display: none; 
+    position: fixed;
+    flex-direction: column;
+    text-align: left;
+    width: 12.5vw;
+    top:10.6vh;
+    left: 24.5vw;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 99;
+}
+.LooseLeaf a, .FlavorProfiles a,.HealthBenefit a{
+    display: flexbox;
+    text-align: left;
+    color:var(--c);
+    font-size: 14px;
+    padding: 0px 40px;
+    line-height: 35px;
+}
+.LooseLeaf a:hover,.FlavorProfiles a:hover,.HealthBenefit a:hover{
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: var(--d);
+    background-color: var(--a); 
+    color:var(--e);
+    scale: 102%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.FlavorProfiles{  
+    left: 35.8vw;
+}
+
+.HealthBenefit{  
+    left: 46.6vw;
 }
 
 #blank{
-    position: relative;
     display: flex;
-    top: 89vh;
-}
-footer{
-    font-size: 8px;
-    font-family: "Roboto";
-    color: #df7d7d;
-}
-.SpecialtyCoffeesContiner{
     position: relative;
-    z-index: -1;
+    top: 100vh;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+footer{
+    font-family: "Roboto";
+    font-size: 12px;
 }
