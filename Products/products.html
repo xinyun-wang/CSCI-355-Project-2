@@ -6,70 +6,319 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/qc-logo.JPG" />
     <link href="products.css" rel="stylesheet">
     <script src="products.js"></script>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Coffee - QCR</title>
 </head>
 <body>
-    <ul class="top">
-        <li><strong>Free Shipping for QC Students<i class="fa-solid fa-truck-fast" style="color: #e71939;"></i></strong></li>
-        <li><a id="loc" href='#'><strong><i class="fa-solid fa-map-location-dot" style="color: #e71939;"></i>Location</strong></a></li>
-        <li><a href='#'><strong><i class="fa-solid fa-car" style="color: #e71939;"></i>Order Pickup</strong></a></li>
-        <li><a href='#'><strong><i class="fa-solid fa-user" style="color: #e71939;"></i>Sign in</a></strong></li>
-    </ul>
-    <header>
-        <a href='../Home/home.html'><img id='logo' src="images/logoRevised.png" alt="logo"></a>
+    <img src="https://www.livingtea.net/cdn/shop/files/LT_primary_full.png?height=628&pad_color=fff&v=1677607453&width=1200" class="logo" id="logo">
+    <div class="header">
         <nav>
-            <ul class="head">
-                <li id="drop" onmouseover="changeColor()" onclick="dropdown()"><a href='#' class="dropbtn"><strong id="shop">Shop<i id="down" class="fa-solid fa-caret-down" style="color: black;"></i></strong></a></li>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Coffee</a>
-                    <a href="#">Tea</a>
-                    <a href="#">Equipment</a>
-                    <a href="#">Gifts</a>
-                </div>
-                <li><a href='#'><strong>Subscriptions</a></strong></li>
-                <li><a href='#'><strong>Bundles</a></strong></li>
+            <ul class="nav-links">
+                <li class="btn">Home<i class="fa-solid fa-house-chimney icons" style="color: #ffffff;"></i></li>
+                <li class="btn">Shop<i class="fa-solid fa-bag-shopping icons" style="color: #ffffff;"></i></i></li>
+                <li class="btn">Locations<i class="fa-solid fa-map-location-dot icons" style="color: #ffffff;"></i></li>
+                <li class="btn">Contact<i class="fa-solid fa-pen-to-square icons" style="color: #ffffff;"></i></li>
+                <li class="btn">Cart<i class="fa-solid fa-cart-shopping icons" style="color: #ffffff;"></i></li>
             </ul>
         </nav>
-        <a onmouseover="changeColorCart()"href='../Cart/cart.html'><strong><i id='cart' class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></strong>
-    </header>
-    <section>
-        <h1><strong>Coffee</strong></h1>
-    </section>
-    <div class="search">
-        <input type="text" placeholder="SEARCH" class="input" name="form">
-        <button class="btn">
-            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-        </button>    
     </div>
-    <div class="container">
-        <div class="item item-1"><i class="fa-solid fa-earth-asia"></i><p>Asia</p></div>
-        <div class="item item-2"><i class="fa-solid fa-earth-africa"></i><p>Africa</p></div>
-        <div class="item item-3"><i class="fa-solid fa-earth-americas"></i><p>South America</p></div>
-        <div class="item item-4"><i class="fa-solid fa-earth-oceania"></i><p>Australia</p></div>
-        <div class="item item-5"><i class="fa-solid fa-earth-europe"></i><p>Europe</p></div>
-    </div>
-    <div id="side">
-        <ul class="side">
-            <li onclick="dropdown2()" id="title"><strong><i class="fa-solid fa-mug-hot" style="color: #fff;"></i>Types of Coffee<i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></strong></li><span class="br"></span>
-            <div id="myDropdown2" class="dropdown-content2">
-                <li><span class="underline-anim"><a href='#'>Flavored Coffees</a></span></li>
-                <li><span class="underline-anim"><a href='#'>Decaf Coffees</a></span></li>
-                <li><span class="underline-anim"><a href='#'>K-Cups</a></span></li>
-                <li><span class="underline-anim"><a href='#'>Packets</a></span></li>
+    <div class = "products">
+        <div class = "container">
+            <h1 class = "lg-title">Special Black Friday Day Deals</h1>
+            <p class = "text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sit consectetur, ipsa voluptatem vitae necessitatibus dicta veniam, optio, possimus assumenda laudantium. Temporibus, quis cum.</p>
+
+            <div class = "product-items">
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "https://cdn11.bigcommerce.com/s-jl3t5tg/images/stencil/500x659/products/80/1964/organic-bancha-green-tea__74444.1501612095.png?c=2" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Organic</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">organic chun mee green tea</a>
+                        <p class = "product-price">$ 32.00</p>
+                        <p class = "product-price">$ 24.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">25% off</h2>
+                    </div>
+                </div>
+
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "https://cdn11.bigcommerce.com/s-jl3t5tg/images/stencil/500x659/products/88/1991/organic-citrus-ginger-green-tea__65220.1640121177.png?c=2" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">organic</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">organic citrus ginger green tea</a>
+                        <p class = "product-price">$ 33.00</p>
+                        <p class = "product-price">$ 22.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">33% off</h2>
+                    </div>
+                </div>
+
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "https://cdn11.bigcommerce.com/s-jl3t5tg/images/stencil/500x659/products/87/1989/organic-cinnamon-rooibos__00303.1628797308.png?c=2" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">herbal</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">cinnamon rooibos</a>
+                        <p class = "product-price">$ 40.00</p>
+                        <p class = "product-price">$ 30.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">best seller</h2>
+                    </div>
+                </div>
+
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "https://cdn11.bigcommerce.com/s-jl3t5tg/images/stencil/500x659/products/157/2349/organic-vanilla-almond-rooibos-2018__98836.1679686883.png?c=2" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">herbal</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">Vanilla Almond Rooibos</a>
+                        <p class = "product-price">$ 36.00</p>
+                        <p class = "product-price">$ 18.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">50% off</h2>
+                    </div>
+                </div>
+
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "https://cdn11.bigcommerce.com/s-jl3t5tg/images/stencil/500x659/products/127/2112/organic-makaibari-estate-oolong-tea__10096.1653336362.png?c=2" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Oolong</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">Makaibari Estate Oolong Tea</a>
+                        <p class = "product-price">$ 50.00</p>
+                        <p class = "product-price">$ 35.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">best seller</h2>
+                    </div>
+                </div>
+
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "https://cdn11.bigcommerce.com/s-jl3t5tg/images/stencil/500x659/products/143/2158/organic-plum-oolong-tea__48338.1501640892.png?c=2" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Oolong</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">plum oolong tea</a>
+                        <p class = "product-price">$ 20.00</p>
+                        <p class = "product-price">$ 16.00</p>
+                    </div>
+                    <div class = "off-info">
+                        <h2 class = "sm-title">20% off</h2>
+                    </div>
+                </div>
+
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "https://cdn11.bigcommerce.com/s-jl3t5tg/images/stencil/500x659/products/214/2009/organic-decaf-iced-tea__17116.1676988829.png?c=2" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">decaf</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">iced black tea</a>
+                        <p class = "product-price">$ 28.00</p>
+                        <p class = "product-price">$ 7.00</p>
+                    </div>
+                    <div class = "off-info">
+                        <h2 class = "sm-title">75% off</h2>
+                    </div>
+                </div>
+
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "https://cdn11.bigcommerce.com/s-jl3t5tg/images/stencil/500x659/products/95/2003/organic-decaf-english-breakfast-black-tea__76269.1668799991.png?c=2" alt = "product image">
+                        </div>
+                        <div class = "product-btns">
+                            <button type = "button" class = "btn-cart"> add to cart
+                                <span><i class = "fas fa-plus"></i></span>
+                            </button>
+                            <button type = "button" class = "btn-buy"> buy now
+                                <span><i class = "fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">decaf</h2>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href = "#" class = "product-name">english breakfast black tea</a>
+                        <p class = "product-price">$ 18.00</p>
+                        <p class = "product-price">$ 12.00</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">33% off</h2>
+                    </div>
+                </div>
             </div>
-        </ul>
-    </div>
-    <div class="products">
-        <a href='../Selected_Product/index.html'><div class="prod prod-1"><img src='https://schuilcoffee.com/cdn/shop/products/White-Heather_39ee22bf-f43c-4451-9f09-c5543e40bb67.png?v=1603490106&width=535' alt="coffee1"><p class="prod-name">White Heather</p><p class="price">From $11.99 USD</p></div></a>
-        <div class="prod prod-2"><img src='https://schuilcoffee.com/cdn/shop/products/Almond-Joyful.png?v=1603487847&width=535' alt="coffee2"><p class="prod-name">Almond Joyful</p><p class="price">From $11.99 USD</p></div>
-        <div class="prod prod-3"><img src='https://schuilcoffee.com/cdn/shop/products/BigWaveBlend12ozMockup_603877a5-a76c-4ac6-aaf5-f47c1882a2cd.png?v=1675174749&width=535' alt='coffee3'><p class="prod-name">Big Wave Blend</p><p class="price">From $11.99 USD</p></div>
-        <div class="prod prod-4"><img src='https://schuilcoffee.com/cdn/shop/files/Bed_Breakfast12ozmockup.png?v=1682961030&width=535' alt='coffee4'><p class="prod-name">Bed & Breakfast</p><p class="price">From $11.99 USD</p></div>
-        <div class="prod prod-5"><img src='https://schuilcoffee.com/cdn/shop/products/Fogchaser_1.png?v=1603490672&width=535' alt='coffee5'><p class="prod-name">Fogchaser</p><p class="price">From $11.99 USD</p></div>
-        <div class="prod prod-6"><img src='https://schuilcoffee.com/cdn/shop/products/Cinnamon-Hazelnut.png?v=1603488890&width=535' alt='coffee6'><p class="prod-name">Cinnamon Hazelnut</p><p class="price">From $11.99 USD</p></div>
-        <div class="prod prod-7"><img src='https://schuilcoffee.com/cdn/shop/products/Cinnamon-Danish-Swirl.png?v=1603488884&width=535' alt='coffee7'><p class="prod-name">Cinnamon Danish Swirl</p><p class="price">From $11.99 USD</p></div>
-        <div class="prod prod-8"><img src='https://schuilcoffee.com/cdn/shop/products/Cuban-Roast_2000x_581199e0-4b1a-40f3-a817-b5a3562b410b.png?v=1603490647&width=535' alt='coffee8'><p class="prod-name">Cuban Roast</p><p class="price">From $11.99 USD</p></div>
-        <div class="prod prod-9"><img src='https://schuilcoffee.com/cdn/shop/products/French-Vanilla-Creme_72033efb-763f-4687-92b0-4db01bb44c7f.png?v=1603489355&width=535' alt='coffee9'><p class="prod-name">French Vanilla Creme</p><p class="price">From $11.99 USD</p></div>
+        </div>
+        <footer>
+            <p>See More <br><i class="arrow down"></i></p>
+        </footer>
     </div>
 </body>
 </html>
