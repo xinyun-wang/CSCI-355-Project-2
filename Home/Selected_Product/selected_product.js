@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var speed = 10; // Initial speed in seconds
+
+    function updateSpeed() {
+        document.getElementById('scrollingText').style.animation = 'scrollText ' + speed + 's linear infinite';
+    }
+
+    document.getElementById('increaseSpeed').addEventListener('click', function() {
+        speed = Math.max(1, speed - 1); // Decrease speed duration by 1, minimum 1
+        updateSpeed();
+    });
+
+    document.getElementById('decreaseSpeed').addEventListener('click', function() {
+        speed += 1; // Increase speed duration by 1
+        updateSpeed();
+    });
+});
+
+
+
 function changeColor() {
     document.getElementById("shop").onmouseover = function() {document.getElementById("down").style.color = "#E71939";}
     document.getElementById("shop").onmouseout = function() {document.getElementById("down").style.color = "black";}
@@ -65,6 +85,3 @@ window.onclick = function(event) {
     }
 }
 
-document.getElementById("myDropdown2").addEventListener('click',function(event){
-    event.stopPropagation();
-});
